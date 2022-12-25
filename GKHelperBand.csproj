@@ -80,8 +80,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bandsign.pfx" />
+    <Content Include="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Jint">
+      <Version>3.0.0-beta-2044</Version>
+    </PackageReference>
+    <PackageReference Include="log4net">
+      <Version>2.0.15</Version>
+    </PackageReference>
     <PackageReference Include="SharpShell">
       <Version>2.7.2</Version>
     </PackageReference>
